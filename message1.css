@@ -355,7 +355,7 @@ nav ul li {
     animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
-    opacity: 0;
+    opacity: 0.5;
 }
 
 /* hover */
@@ -441,6 +441,20 @@ nav ul li {
     background: #333;
 }
 
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
 /* ----------------------------------------------- */
 
 .details1 {
@@ -470,14 +484,14 @@ nav ul li {
 
 .hrp {
     border: none;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
     height: 5px;
     margin-bottom: 30px;
 }
 
 .money {
-    color: green;
+    color: rgb(119, 247, 119);
 }
 
 .socbtn1 {
@@ -522,7 +536,7 @@ nav ul li {
     }
 
     .box5 {
-        width: 400px;
+        width: 350px;
         height: 200px;
         right: 205px;
     }
@@ -567,7 +581,7 @@ nav ul li {
         position: relative;
         width: 200px;
         top: 160px;
-        left: 90px;
+        left: 50px;
     }
 
 }
